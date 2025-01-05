@@ -1,0 +1,131 @@
+/* Styles for Navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+   
+        display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 40px 40px;
+background-color: #BBD0FF;
+color: #fff;
+}
+
+.logo a {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu input[type="checkbox"] {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-list li {
+    margin-left: 20px;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+.menu-list a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        background-color: #BBD0FF;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .menu input[type="checkbox"]:checked ~ .menu-list {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+.table{
+    width:2000px ;
+    height:1500px;
+    display:block; 
+    margin: 0;
+    margin-top: 10px;
+}
+.button{
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #BBD0FF;;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #ffffff;
+    color: #BBD0FF;
+}
+
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #BBD0FF;;
+    border: none;
+    padding: 10px 10px;
+    position: fixed;
+    top: 8px;
+    left: 10px;
+}
